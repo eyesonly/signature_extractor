@@ -77,6 +77,11 @@ component_sizes = np.bincount(pre_version.ravel())
 too_small = component_sizes > (a4_big_size_outliar_constant)
 too_small_mask = too_small[pre_version]
 pre_version[too_small_mask] = 0
+
+# to expand on later when we do the prototype, we're interested in knowing if a single document image has signatures on it or not, so how many signatures were found?
+labeled_image, count = measure.label(pre_version, return_num=True)
+print("number of signatures detected is", count, sep=" ")
+
 # save the the pre-version which is the image is labelled with colors
 # as considering connected components
 plt.imsave('pre_version.png', pre_version)

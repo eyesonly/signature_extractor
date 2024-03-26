@@ -1,5 +1,14 @@
 # "Signature Extraction" based connected component analysis
 
+## Custom changes for our signature detection prototype:
+
+- DONE Have added code to print the number of signatures in a single image
+- TODO code to split a PDF into component images 
+- TODO code to detect when an addendum page starts
+- TODO a system to tag images as signed or not a document as still requiring signatures
+- TODO work out how to use this inside a RAG-based intelligent document assistant to query/find unsigned documents 
+
+
 A design and implementation of a super lightweight algorithm for "overlapped handwritten signature extraction from scanned documents" using OpenCV and scikit-image on python. ***Please contact if you need professional signature detection & recognition & segmentation & counting project with the super high accuracy!***
 
 ---
